@@ -24,37 +24,11 @@
             max-width: 800px;
             margin: 0 auto; /* Centers the content */
         }
-        .iframe-wrapper {
-            text-align: center; /* Centers the chart in its container */
-        }
         iframe {
             padding: 2rem;
             max-width: 600px;
             margin: 0 auto; /* Centers the content */
             border: 3px solid black;
-            box-sizing: border-box; /* Ensures padding/border don't break width scaling */
-        }
-
-        /* Mobile-Only Responsive Adjustments */
-        @media (max-width: 480px) {
-            main {
-                padding: 1rem;
-            }
-            header {
-                padding: 1rem;
-            }
-            iframe {
-                padding: 0.5rem; /* Reduces inner padding to save space */
-                width: 100% !important; /* Overrides the hardcoded width="600" */
-                height: auto !important; /* Allows aspect-ratio to dictate height */
-            }
-            /* Maintains correct proportions for each specific chart */
-            .player-stats {
-                aspect-ratio: 600 / 183;
-            }
-            .deck-stats {
-                aspect-ratio: 600 / 371;
-            }
         }
     </style>
 </head>
@@ -69,15 +43,10 @@
     <!-- Main Body Content -->
     <main>
         <h2>Player Leaderboards</h2>
-        <div class="iframe-wrapper">
-          <iframe class="player-stats" width="600" height="183" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRHv1xIAyB3ZTfWVVvlcwWtPYWtnaYlG8Xpr90fxu5xo28mmFTgpTsZs0m73LQ6u6duJcRrl99_uwHz/pubchart?oid=1501149377&amp;format=image"></iframe>
-        </div>
+          <iframe width="600" height="183" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRHv1xIAyB3ZTfWVVvlcwWtPYWtnaYlG8Xpr90fxu5xo28mmFTgpTsZs0m73LQ6u6duJcRrl99_uwHz/pubchart?oid=1501149377&amp;format=image"></iframe>
     
         <h2>Deck Statistics</h2>
-        <div class="iframe-wrapper">
-          <iframe class="deck-stats" width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRHv1xIAyB3ZTfWVVvlcwWtPYWtnaYlG8Xpr90fxu5xo28mmFTgpTsZs0m73LQ6u6duJcRrl99_uwHz/pubchart?oid=400143357&amp;format=image"></iframe>
-        </div>
-        
+          <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRHv1xIAyB3ZTfWVVvlcwWtPYWtnaYlG8Xpr90fxu5xo28mmFTgpTsZs0m73LQ6u6duJcRrl99_uwHz/pubchart?oid=400143357&amp;format=image"></iframe>
     </main>
 
 </body>
